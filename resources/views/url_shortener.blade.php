@@ -101,8 +101,8 @@ $(document).ready(function () {
                     $('.e_msg_div').show();
                 }
 
-                $('.s_msg_div').hide(500);
-                $('.e_msg_div').hide(500);
+                $('.s_msg_div').fadeOut(3000);
+                $('.e_msg_div').fadeOut(3000);
 
             }
         });

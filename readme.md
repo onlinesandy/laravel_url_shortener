@@ -16,9 +16,22 @@ composer install
 npm install
 chmod -R 777 storage bootstrap/cache
 cp .env.example .env
+php artisan key:generate
+
 create Database
 Change the values of the `.env` file as necessary
 php artisan migrate
+
+
+
+```
+
+## Start Server
+
+```
+php artisan serve
+
+
 
 ```
 
