@@ -13,7 +13,7 @@ class LinksController extends Controller {
         return view('url_shortener');
     }
 
-    public function shorten(Request $request) {
+    public function shorten(Request $request) { // Generate Short link
         $randomStr = Str::random(5);
         $c_domain = URL::to('/');
         $shorten_link = $c_domain . '/' . $randomStr;
@@ -24,7 +24,7 @@ class LinksController extends Controller {
             'original_link' => $request->url,
             'short_link' => $shorten_link
         ];
-        $res = Link::create($Data);
+        $res = Link::create($Data); // Save in Database
         if (isset($res->id) && $res->id > 0) {
             return json_encode(array('status' => 1));
         } else {
@@ -32,7 +32,7 @@ class LinksController extends Controller {
         }
     }
 
-    public function fetchUrl($link) {
+    public function fetchUrl($link) { // Check link from Link Table
         $c_domain = URL::to('/');
         $shorten_link = $c_domain . '/' . $link;
 
@@ -45,7 +45,7 @@ class LinksController extends Controller {
         }
     }
 
-    public function getUrls(Request $request) {
+    public function getUrls(Request $request) { // Get Records from Link Table
 
         ## Read value
         $draw = $request->get('draw');
