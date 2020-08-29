@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/media/sandy/Sandy/laravel/l5/urlShortener/resources/views/url_shortener.blade.php</file>
+            <file>file:/media/sandy/Sandy/laravel/l5/urlShortener/database/migrations/2020_08_29_031543_create_links_table.php</file>
+            <file>file:/media/sandy/Sandy/laravel/l5/urlShortener/app/Link.php</file>
+            <file>file:/media/sandy/Sandy/laravel/l5/urlShortener/routes/web.php</file>
+            <file>file:/media/sandy/Sandy/laravel/l5/urlShortener/app/Http/Controllers/LinksController.php</file>
+        </group>
+    </open-files>
+</project-private>
